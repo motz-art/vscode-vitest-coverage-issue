@@ -1,11 +1,7 @@
 export function process(input) {
-  const result = getResult(input);
+  const result = input ? 1 : 0;
 
   if (!result) return undefined;
 
   return result;
-}
-
-function getResult(input) {
-  return input ? {}: undefined;
 }
