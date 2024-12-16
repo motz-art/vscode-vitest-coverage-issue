@@ -1,23 +1,11 @@
-export function parseString(inputString) {
-  let token;
+export function process(input) {
+  const result = getResult(input);
 
-  if (!inputString) return {};
+  if (!result) return undefined;
 
-  fn1();
+  return result;
+}
 
-  if (!token) return {};
-
-  fn2();
-
-  if (token) return;
-
-  return {};
-
-  function fn1() {
-    token = token ? undefined : {};
-  }
-
-  function fn2() {
-    return fn1();
-  }
+function getResult(input) {
+  return input == "error" ? undefined : {};
 }
