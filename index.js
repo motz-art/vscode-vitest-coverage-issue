@@ -7,5 +7,5 @@ export function process(input) {
 }
 
 function getResult(input) {
-  return input == "error" ? undefined : {};
+  return input ? {}: undefined;
 }
